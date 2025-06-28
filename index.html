@@ -16,14 +16,23 @@
       background-color: #343a40;
       color: white;
       padding: 1rem 2rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
     }
     .logo {
-      text-align: center;
-      margin-top: 2rem;
+      margin-right: 1rem;
     }
     .logo img {
-      max-width: 250px;
+      max-width: 125px;
+    }
+    .header-text {
+      flex-grow: 1;
+    }
+    .header-text h1 {
+      margin: 0;
+    }
+    .header-text p {
+      margin: 0;
     }
     .profile {
       display: flex;
@@ -60,13 +69,14 @@
 </head>
 <body>
   <header>
-    <h1>Bedrock Bookkeeping</h1>
-    <p>Serving small businesses for over 20 years</p>
+    <div class="logo">
+      <img src="images/bedrock_logo.png" alt="Bedrock Bookkeeping Logo">
+    </div>
+    <div class="header-text">
+      <h1>Bedrock Bookkeeping</h1>
+      <p>Serving small businesses for over 20 years</p>
+    </div>
   </header>
-
-  <div class="logo">
-    <img src="images/bedrock_logo.png" alt="Bedrock Bookkeeping Logo">
-  </div>
 
   <section class="profile">
     <div class="bio-wrap">
